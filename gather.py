@@ -14,15 +14,11 @@ maskPaths = absoluteFilePaths("./data/mask")
 skinPixelNumber = [[[0 for k in range(256)] for j in range(256)] for i in range(256)]
 nonskinPixelNumber = [[[0 for k in range(256)] for j in range(256)] for i in range(256)]
 
-# print(skinPixelNumber[0][0][0])
-
 for i in range(len(imagePaths)):
   im = Image.open(imagePaths[i])
   ms = Image.open(maskPaths[i])
   im = im.convert('RGB')
   ms = ms.convert('RGB')
-  # imagePixel = im.convert('RGB')
-  # maskPixel = ms.convert('RGB')
 
   width, height = im.size
 
@@ -38,8 +34,6 @@ for i in range(len(imagePaths)):
   print('image no: ' + str(i) + ' processed!')
   im.close()
   ms.close()
-
-# calculate probability
 
 skinPixels = 0
 nonSkinPixels = 0
@@ -65,6 +59,3 @@ for i in range(256):
   print("*", end="")
 
 f.close()
-
-  # print(im.getpixel((1, 1)))
-  # break
