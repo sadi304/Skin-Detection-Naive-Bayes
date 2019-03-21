@@ -12,3 +12,7 @@ Skin detection detection using naive Bayes classification (python)
 #### RUN:
 - Run gather.py (Build a file with probabilitys for each pixel in rgb plane)
 - Run test.py
+
+#### NEED:
+- pip install pillow
+- python > 3.5
