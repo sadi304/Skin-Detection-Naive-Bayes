@@ -16,3 +16,6 @@ Skin detection detection using naive Bayes classification (python)
 #### NEED:
 - pip install pillow
 - python > 3.5
+
+#### CREDIT:
+- https://github.com/MinhasKamal/SkinDetector 
